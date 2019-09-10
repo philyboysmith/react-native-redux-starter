@@ -48,8 +48,9 @@ Update app.json then run `expo start` and you're away. To open the app in your b
 
 ## Built With
 
+JS is linted on the fly mostly using the Airbnb configuration.
+
 The app uses the [ducks methodology](https://github.com/erikras/ducks-modular-redux) of bundling reducers, action types and actions. 
- 
 
 ## Authors
 
