@@ -16,7 +16,6 @@ const initialState = {
   authenticated: false,
   loading: false,
   error: null,
-  mode: null,
 };
 
 export const login = ({ data }) => dispatch => {
@@ -40,10 +39,10 @@ export default (state = initialState, action) => {
       return initialState;
 
     case LOG_IN_SUCCESS:
-      return { ...state, loading: false, authenticated: true, error: null, mode: action.payload.AppMode };
+      return { ...state, loading: false, authenticated: true, error: null };
 
     case LOG_IN_FAILURE:
-      return { ...state, authenticated: false, loading: false, error: action.payload, mode: null };
+      return { ...state, authenticated: false, loading: false, error: action.payload };
     default:
       return state;
   }
